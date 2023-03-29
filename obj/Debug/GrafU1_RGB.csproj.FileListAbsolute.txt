@@ -1,0 +1,11 @@
+C:\Users\ulise\source\repos\GrafU1_RGB\bin\Debug\GrafU1_RGB.exe.config
+C:\Users\ulise\source\repos\GrafU1_RGB\bin\Debug\GrafU1_RGB.exe
+C:\Users\ulise\source\repos\GrafU1_RGB\bin\Debug\GrafU1_RGB.pdb
+C:\Users\ulise\source\repos\GrafU1_RGB\obj\Debug\GrafU1_RGB.csproj.AssemblyReference.cache
+C:\Users\ulise\source\repos\GrafU1_RGB\obj\Debug\GrafU1_RGB.ColorRGB.resources
+C:\Users\ulise\source\repos\GrafU1_RGB\obj\Debug\GrafU1_RGB.Form1.resources
+C:\Users\ulise\source\repos\GrafU1_RGB\obj\Debug\GrafU1_RGB.Properties.Resources.resources
+C:\Users\ulise\source\repos\GrafU1_RGB\obj\Debug\GrafU1_RGB.csproj.GenerateResource.cache
+C:\Users\ulise\source\repos\GrafU1_RGB\obj\Debug\GrafU1_RGB.csproj.CoreCompileInputs.cache
+C:\Users\ulise\source\repos\GrafU1_RGB\obj\Debug\GrafU1_RGB.exe
+C:\Users\ulise\source\repos\GrafU1_RGB\obj\Debug\GrafU1_RGB.pdb
