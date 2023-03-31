@@ -17,5 +17,10 @@ namespace GrafU1_RGB
             InitializeComponent();
             colorRGB1.Value = 120;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
