@@ -31,11 +31,16 @@ namespace GrafU1_RGB
         {
             this.colorRGB1 = new GrafU1_RGB.ColorRGB();
             this.button1 = new System.Windows.Forms.Button();
+            this.colorRGB2 = new GrafU1_RGB.ColorRGB();
             this.SuspendLayout();
             // 
             // colorRGB1
             // 
+            this.colorRGB1.Colors = null;
+            this.colorRGB1.FinColor = System.Drawing.Color.White;
+            this.colorRGB1.InicioColor = System.Drawing.Color.Black;
             this.colorRGB1.Location = new System.Drawing.Point(57, 45);
+            this.colorRGB1.Maximo = 255;
             this.colorRGB1.Name = "colorRGB1";
             this.colorRGB1.Size = new System.Drawing.Size(435, 35);
             this.colorRGB1.TabIndex = 0;
@@ -51,11 +56,24 @@ namespace GrafU1_RGB
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // colorRGB2
+            // 
+            this.colorRGB2.Colors = null;
+            this.colorRGB2.FinColor = System.Drawing.Color.White;
+            this.colorRGB2.InicioColor = System.Drawing.Color.Black;
+            this.colorRGB2.Location = new System.Drawing.Point(57, 86);
+            this.colorRGB2.Maximo = 255;
+            this.colorRGB2.Name = "colorRGB2";
+            this.colorRGB2.Size = new System.Drawing.Size(435, 35);
+            this.colorRGB2.TabIndex = 2;
+            this.colorRGB2.Value = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(547, 362);
+            this.Controls.Add(this.colorRGB2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.colorRGB1);
             this.Name = "Form1";
@@ -68,6 +86,7 @@ namespace GrafU1_RGB
 
         private ColorRGB colorRGB1;
         private System.Windows.Forms.Button button1;
+        private ColorRGB colorRGB2;
     }
 }
 

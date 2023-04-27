@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Colores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Colores.Designer.cs">
+      <DependentUpon>Colores.cs</DependentUpon>
+    </Compile>
     <Compile Include="ColorRGB.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -59,6 +65,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Colores.resx">
+      <DependentUpon>Colores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ColorRGB.resx">
       <DependentUpon>ColorRGB.cs</DependentUpon>
     </EmbeddedResource>
