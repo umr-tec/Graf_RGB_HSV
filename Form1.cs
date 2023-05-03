@@ -14,27 +14,12 @@ namespace GrafU1_RGB
     {
         public Form1()
         {
-            InitializeComponent();
-            EnviarRangoColores();
-            
+            InitializeComponent();            
         }
-
-        private void EnviarRangoColores() {
-            Color rgbColor = GetRgbColor();
-
-            colorRGB2.EnviarColor(Color.FromArgb(0, rgbColor.G, rgbColor.B),
-                Color.FromArgb(255, rgbColor.G, rgbColor.B));
-        }
-
-        private Color GetRgbColor()
-        {
-            return Color.FromArgb(
-                colorRGB2.Value);               
-        }
-
+      
         private void button1_Click(object sender, EventArgs e)
         {
-
+           
         }
     }
 }

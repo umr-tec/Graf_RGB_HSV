@@ -131,6 +131,7 @@ namespace GrafU1_RGB
                 porcentaje = 0.0;
             numericUpDown1.Value = (int)(porcentaje * Maximo);
         }
+      
 
         //Metodo para cargar el tamaño de inicio del rectangulo
         protected override void OnSizeChanged(EventArgs e)
@@ -166,6 +167,45 @@ namespace GrafU1_RGB
                 }
             }
             graphics.DrawRectangle(Pens.Black, colorRectabgulo);
+        }
+
+        //moisemove
+        protected override void OnMouseMove(MouseEventArgs e)
+        {
+            if (dibujando)
+            {
+                ActualizaSlider(e.Location);
+            }
+            //base.OnMouseMove(e);
+        }
+
+        protected override void OnMouseUp(MouseEventArgs e)
+        {
+            if (dibujando && e.Button == MouseButtons.Left )
+            {
+                dibujando = false;
+                ActualizaSlider(e.Location);
+            }
+
+          // base.OnMouseUp(e);
+        }
+
+        protected override void OnMouseDown(MouseEventArgs e)
+        {
+            if (colorRectabgulo.Contains(e.Location) && e.Button == MouseButtons.Left)
+            {
+                dibujando = true;
+                ActualizaSlider(e.Location);
+            }
+           // base.OnMouseDown(e);
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+            
+            DibijarRectanguloColor(e.Graphics);
+            DibujarSlider(e.Graphics);
         }
 
     }  
